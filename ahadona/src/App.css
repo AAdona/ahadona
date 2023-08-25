@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.cursor-follower {
+  height: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  translate: -50% -50%;
+  pointer-events: none;
+  background: linear-gradient(
+    to right,
+    #1f95a5,
+    rgb(189, 33, 189)
+  );
+  filter: blur(30px);
+}
+
+.mouse {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(200px);
+}
+
+.name {
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+}
